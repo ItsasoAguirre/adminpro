@@ -4,13 +4,14 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
+
 $(function() {
     "use strict";
     $(function() {
         $(".preloader").fadeOut();
     });
     jQuery(document).on('click', '.mega-dropdown', function(e) {
-        e.stopPropagation()
+        e.stopPropagation();
     });
     // ============================================================== 
     // This is for the top header part and sidebar part
@@ -46,12 +47,12 @@ $(function() {
             $("body").trigger("resize");
             $("body").removeClass("mini-sidebar");
             $('.navbar-brand span').show();
-            
+
         } else {
             $("body").trigger("resize");
             $("body").addClass("mini-sidebar");
             $('.navbar-brand span').hide();
-            
+
         }
     });
 
@@ -100,14 +101,14 @@ $(function() {
     //tooltip
     // ============================================================== 
     $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     // ============================================================== 
     //Popover
     // ============================================================== 
     $(function() {
-        $('[data-toggle="popover"]').popover()
-    })
+        $('[data-toggle="popover"]').popover();
+    });
     // ============================================================== 
     // Sidebarmenu
     // ============================================================== 
@@ -119,7 +120,7 @@ $(function() {
     // Perfact scrollbar
     // ============================================================== 
     $('.scroll-sidebar, .right-side-panel, .message-center, .right-sidebar').perfectScrollbar();
-    
+
     // ============================================================== 
     // Resize all elements
     // ============================================================== 
@@ -131,7 +132,7 @@ $(function() {
         $(this).toggleClass("task-done");
     });
 
-    
+
 
     // ============================================================== 
     // Collapsable cards
