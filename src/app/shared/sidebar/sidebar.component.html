@@ -13,7 +13,7 @@
                         <li><a>My Balance</a></li>
                         <li><a>Inbox</a></li>
                         <li><a [routerLink]="['/account-settings']" routerLinkActive="active">Account Setting</a></li>
-                        <li><a routerLink="/login">Logout</a></li>
+                        <li><a class="pointer" (click)="usuarioService.logout()">Logout</a></li>
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
